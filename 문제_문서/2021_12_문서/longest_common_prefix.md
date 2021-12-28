@@ -69,13 +69,21 @@ class Solution {
 ```java
 class Solution {
     public String longestCommonPrefix(String[] strs) {
-    if (strs.length == 0) return "";
+    //arr가 없을때는 ""
+    if (strs.length == 0){
+        return "";
+    }
 
+    //첫번째 단어를 prefix로
     String prefix = strs[0];
 
+    //2번째 단어부터 for
     for (int i = 1; i < strs.length; i++){
+        //prefix의 indexOf가 0이 아닌 경우 while
         while (strs[i].indexOf(prefix) != 0) {
+            //prefix를 한글자씩 줄인다.
             prefix = prefix.substring(0, prefix.length() - 1);
+            //prefix가 없는 경우 ""
             if (prefix.isEmpty()){
                 return "";
             }
