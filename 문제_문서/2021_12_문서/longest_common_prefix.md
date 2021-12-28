@@ -64,3 +64,24 @@ class Solution {
 #   분석
 -   풀이는 했는데 너무 간결하지 못한 풀이임
 -   좀 더 간결한 정답으로 리펙토링
+
+#   참고할 만한 정답
+```java
+class Solution {
+    public String longestCommonPrefix(String[] strs) {
+    if (strs.length == 0) return "";
+
+    String prefix = strs[0];
+
+    for (int i = 1; i < strs.length; i++){
+        while (strs[i].indexOf(prefix) != 0) {
+            prefix = prefix.substring(0, prefix.length() - 1);
+            if (prefix.isEmpty()){
+                return "";
+            }
+        }        
+    }
+    return prefix;
+    }
+}
+```
