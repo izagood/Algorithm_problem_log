@@ -1,6 +1,10 @@
 #   정답
 ```java
-
+class Solution {
+    public boolean isValid(String s) {
+        
+    }
+}
 ```
 
 #   분석
