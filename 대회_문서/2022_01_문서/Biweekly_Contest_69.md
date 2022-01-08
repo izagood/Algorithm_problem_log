@@ -1,9 +1,9 @@
-####    문제1
+####    문제1 ⭕
 -   문제 링크 : [2129. Capitalize the Title](https://leetcode.com/contest/biweekly-contest-69/problems/capitalize-the-title/)
 -   정답 및 분석 : [2129. Capitalize the Title 문서](../../../문제_문서/2022_01_문서/2129_Capitalize_the_Title.md)
 
 
-####    문제2
+####    문제2 ⭕
 -   문제 링크 : [2130. Maximum Twin Sum of a Linked List](https://leetcode.com/contest/biweekly-contest-69/problems/maximum-twin-sum-of-a-linked-list/)
 -   정답 및 분석 : [2130. Maximum Twin Sum of a Linked List 문서](../../../문제_문서/2022_01_문서/2130_Maximum_Twin_Sum_of_a_Linked_List.md)
 
