@@ -37,7 +37,7 @@ class Solution {
 
 
 ####   참고할 만한 정답
-```java
+```cpp
 
 class Solution {
 public:
