@@ -1,5 +1,5 @@
 ##  문제1
--   문제 링크 : [2133. Check if Every Row and Column Contains All Numbers](https://leetcode.com/contest/weekly-contest-275/problems/check-if-every-row-and-column-contains-all-numbers/)
+-   문제 링크 : [Check if Every Row and Column Contains All Numbers](https://leetcode.com/contest/weekly-contest-275/problems/check-if-every-row-and-column-contains-all-numbers/)
 
 ####    정답
 ```java
@@ -73,7 +73,7 @@ class Solution {
 ```
 
 ##  문제2
--   문제 링크 : [2134. Minimum Swaps to Group All 1's Together II](https://leetcode.com/contest/weekly-contest-275/problems/minimum-swaps-to-group-all-1s-together-ii/)
+-   문제 링크 : [Minimum Swaps to Group All 1's Together II](https://leetcode.com/contest/weekly-contest-275/problems/minimum-swaps-to-group-all-1s-together-ii/)
 
 ####    정답
 ```java
@@ -101,10 +101,9 @@ class Solution {
 
 
 ##  문제3
--   문제 링크 : [2135. Count Words Obtained After Adding a Letter](https://leetcode.com/contest/weekly-contest-275/problems/count-words-obtained-after-adding-a-letter/)
+-   문제 링크 : [Count Words Obtained After Adding a Letter](https://leetcode.com/contest/weekly-contest-275/problems/count-words-obtained-after-adding-a-letter/)
 ####    정답
-```java
-```
+-   시간초과
 
 ####    분석
 ####    참고할 만한 정답
@@ -140,10 +139,9 @@ class Solution {
 
 
 ##  문제4
--   문제 링크 : [2136. Earliest Possible Day of Full Bloom](https://leetcode.com/contest/weekly-contest-275/problems/earliest-possible-day-of-full-bloom/)
+-   문제 링크 : [Earliest Possible Day of Full Bloom](https://leetcode.com/contest/weekly-contest-275/problems/earliest-possible-day-of-full-bloom/)
 ####    정답
-```java
-```
+-   시간초과
 
 ####    분석
 ####    참고할 만한 정답
