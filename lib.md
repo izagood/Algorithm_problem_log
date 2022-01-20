@@ -1,5 +1,16 @@
 #   Library
 
+##  변수 규칙
+```
+List<String> : slist + 숫자
+List<Integer> : ilist + 숫자
+
+Set<String> : ss
+Set<Integer> : is
+
+
+```
+
 ##  for문 패턴
 -   인덱스로 변환하여야 할때
 ```java
@@ -42,4 +53,9 @@ private 리턴 dfs(배열, 깊이, 타겟){
         return dfs(배열, 깊이+1, 타겟);
     }
 }
+```
+
+##  set -> arr
+```java
+int[] answer = hs.stream().mapToInt(Integer::intValue).toArray();
 ```
