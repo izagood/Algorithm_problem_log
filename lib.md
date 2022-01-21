@@ -1,13 +1,24 @@
 #   Library
 
-##  변수 규칙
+##  CP 변수 규칙
 ```
+의미없는 int : n + 숫자
+문제에서 사용되는 int : x, y, z + 숫자
+for에서 사용되는 int : i, j, k
+String : sr
+char : ch
+Object : o
+
+length : len + 숫자
+배열 : ar + 숫자
+
 List<String> : slist + 숫자
 List<Integer> : ilist + 숫자
+-> 객체 첫글자 + list
 
-Set<String> : ss
-Set<Integer> : is
-
+Set<String> : sset
+Set<Integer> : iset
+-> 객체 첫글자 + set
 
 ```
 
@@ -29,12 +40,21 @@ if(max < a){
 }
 ```
 
+##  최대(이항)
+```java
+int c = Math.max(a,b);
+```
+
 ##  최소
 ```java
 int min = Integer.MAX_VALUE;
 if(min > a){
     min = a;
 }
+```
+##  최소(이항)
+```java
+int c = Math.min(a,b);
 ```
 
 ##  교환
