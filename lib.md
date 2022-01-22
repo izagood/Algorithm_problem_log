@@ -80,6 +80,7 @@ private 리턴 dfs(배열, 깊이, 타겟){
 
 //int[]
 int[] answer = hs.stream().mapToInt(Integer::intValue).toArray(); // int[]만 특별히 toArray() 그대로 사용할 수 있다.
+set.stream().sorted().mapToInt(Integer::intValue).toArray(); //정렬 추가
 
 //String[]
 String[] report = sset.stream().toArray(String[]::new);
