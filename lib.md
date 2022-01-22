@@ -75,7 +75,17 @@ private 리턴 dfs(배열, 깊이, 타겟){
 }
 ```
 
-##  set -> arr
+##  stream -> arr
 ```java
-int[] answer = hs.stream().mapToInt(Integer::intValue).toArray();
+
+//int[]
+int[] answer = hs.stream().mapToInt(Integer::intValue).toArray(); // int[]만 특별히 toArray() 그대로 사용할 수 있다.
+
+//String[]
+String[] report = sset.stream().toArray(String[]::new);
+```
+
+##  숫자만 추출
+```java
+String intStr = str.replaceAll("[^0-9]", "");
 ```
