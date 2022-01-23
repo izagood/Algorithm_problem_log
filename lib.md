@@ -2,23 +2,27 @@
 
 ##  CP 변수 규칙
 ```
+
 의미없는 int : n + 숫자
-문제에서 사용되는 int : x, y, z + 숫자
+문제에서 주어졌는데 너무 길때 int : 첫글자
 for에서 사용되는 int : i, j, k
-String : sr
+String : str
 char : ch
 Object : o
 
 length : len + 숫자
-배열 : ar + 숫자
+배열 : arr + 숫자
 
-List<String> : slist + 숫자
-List<Integer> : ilist + 숫자
--> 객체 첫글자 + list
+List<String> : sList + 숫자
+List<Integer> : iList + 숫자
+-> 객체 첫글자 + List
 
-Set<String> : sset
-Set<Integer> : iset
--> 객체 첫글자 + set
+Set<String> : sSet
+Set<Integer> : iSet
+-> 객체 첫글자 + Set
+
+Map<String, Integer> : siMap
+-> 객체 첫글자들 + Map
 
 ```
 
