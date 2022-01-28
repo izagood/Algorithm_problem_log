@@ -99,6 +99,19 @@ String intStr = str.replaceAll("[^0-9]", "");
 ```java
 //정렬
 int[] answer = set.stream().sorted().mapToInt(Integer::intValue).toArray();
+
 //역순 정렬
 int[] cost = Arrays.stream(cost).boxed().sorted(Comparator.reverseOrder()).mapToInt(Integer::intValue).toArray();
+
+//배열 정렬 후 역순으로 꺼내기(역순 정렬과 동일하지만 기본 타입으로 사용가능)
+String[] arr = s.split("");
+Arrays.sort(arr);
+String str = "";
+for(int i=arr.length-1; i>=0; i--){
+    str += arr[i];
+}
+
+
+
+
 ```
