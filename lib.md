@@ -111,7 +111,10 @@ for(int i=arr.length-1; i>=0; i--){
     str += arr[i];
 }
 
-
+//역순 정렬
+char[] arr = s.toCharArray();
+Arrays.sort(arr);
+String str = new StringBuilder(new String(arr)).reverse().toString();
 
 
 ```
