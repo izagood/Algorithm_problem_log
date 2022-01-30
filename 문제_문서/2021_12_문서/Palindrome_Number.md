@@ -81,7 +81,9 @@ class Solution {
 -   단순 역순 비교 문제
 
 #   참고 할 만한 정답
-1.  
+
+-   StringBuilder를 사용하여 1줄 해결
+
 ```java
 class Solution {
     public boolean isPalindrome(int x) {
@@ -89,7 +91,9 @@ class Solution {
     }
 }
 ```
-1.  
+
+-   좌우에서 비교하며 palindrome인지 판단
+
 ```java
 class Solution {
     public boolean isPalindrome(int x) {
