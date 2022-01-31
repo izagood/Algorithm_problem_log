@@ -118,3 +118,8 @@ String str = new StringBuilder(new String(arr)).reverse().toString();
 
 
 ```
+
+##  숫자 자리수 구하기
+```java
+int len = (int)Math.log10(num) + 1;
+```
