@@ -123,3 +123,8 @@ String str = new StringBuilder(new String(arr)).reverse().toString();
 ```java
 int len = (int)Math.log10(num) + 1;
 ```
+
+##  중복 제거
+```java
+String[] report = Arrays.stream(report).distinct().toArray(String[]::new);
+```
