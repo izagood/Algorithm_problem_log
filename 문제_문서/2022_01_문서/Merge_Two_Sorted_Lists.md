@@ -1,10 +1,9 @@
-#   정답
+###   정답(Solution)
 ```java
-
+    소스코드
 ```
 
-#   분석
-
+###   분석
 -   Node 정렬하는 방법
 
 ```java
@@ -37,4 +36,20 @@ Node SortedMerge(Node a, Node b){
 }
 ```
 
-#   참고할 만한 정답
+###   참고할 만한 정답
+```java
+    소스코드
+```
+
+###   비교 분석
+-   비교 분석한 내용
+
+###   비교 분석 반영
+```java
+    정답에 참고한 내용 추가
+```
+
+
+
+### 참조
+[\[JAVA\] LeetCode 21 - Merge Two Sorted Lists](https://yenny-zzang.tistory.com/42)
