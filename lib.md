@@ -116,6 +116,14 @@ char[] arr = s.toCharArray();
 Arrays.sort(arr);
 String str = new StringBuilder(new String(arr)).reverse().toString();
 
+//맘대로 정렬하기
+return Arrays.stream(strings)
+            .sorted((s1, s2) -> {
+                if(s1.charAt(n) == s2.charAt(n)){
+                    return s1.compareTo(s2);
+                }
+                return s1.charAt(n) - s2.charAt(n);
+            }).toArray(String[]::new);
 
 ```
 
