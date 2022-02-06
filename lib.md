@@ -96,27 +96,9 @@ String intStr = str.replaceAll("[^0-9]", "");
 ```
 
 ##  정렬
+
 ```java
-//정렬
-int[] answer = set.stream().sorted().mapToInt(Integer::intValue).toArray();
-
-//역순 정렬
-int[] cost = Arrays.stream(cost).boxed().sorted(Comparator.reverseOrder()).mapToInt(Integer::intValue).toArray();
-
-//배열 정렬 후 역순으로 꺼내기(역순 정렬과 동일하지만 기본 타입으로 사용가능)
-String[] arr = s.split("");
-Arrays.sort(arr);
-String str = "";
-for(int i=arr.length-1; i>=0; i--){
-    str += arr[i];
-}
-
-//역순 정렬
-char[] arr = s.toCharArray();
-Arrays.sort(arr);
-String str = new StringBuilder(new String(arr)).reverse().toString();
-
-//맘대로 정렬하기
+//중복 조건 정렬
 return Arrays.stream(strings)
             .sorted((s1, s2) -> {
                 if(s1.charAt(n) == s2.charAt(n)){
@@ -124,6 +106,32 @@ return Arrays.stream(strings)
                 }
                 return s1.charAt(n) - s2.charAt(n);
             }).toArray(String[]::new);
+```
+
+### 오름차순 정렬
+```java
+//오름차순 정렬
+int[] answer = set.stream().sorted().mapToInt(Integer::intValue).toArray();
+
+```
+
+### 내림차순 정렬
+```java
+//내림차순 정렬
+int[] cost = Arrays.stream(cost).boxed().sorted(Comparator.reverseOrder()).mapToInt(Integer::intValue).toArray();
+
+//배열 정렬 후 역순으로 꺼내기
+String[] arr = s.split("");
+Arrays.sort(arr);
+String str = "";
+for(int i=arr.length-1; i>=0; i--){
+    str += arr[i];
+}
+
+//StringBuilder 내림차순 정렬
+char[] arr = s.toCharArray();
+Arrays.sort(arr);
+String str = new StringBuilder(new String(arr)).reverse().toString();
 
 ```
 
