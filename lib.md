@@ -159,3 +159,30 @@ String[] report = Arrays.stream(report).distinct().toArray(String[]::new);
 char ch = '9';
 int num = ch - '0'; //아스키코드 57 - 48 = 9
 ```
+
+# 이분탐색
+```java
+int min = 0;
+int max = 0;
+for(int num : arr){
+    if(num > max) max = num;
+}
+
+int answer = 0;
+while(min <= max>){
+    int mid = (min + max) / 2;
+
+    int sum = 0;
+    for(int num : arr){
+        if(num > mid) sum += mid;
+        else sum += num;
+    }
+
+    if(sum <= M>){
+        min = mid + 1;
+        answer = mid;
+    }else{
+        max = mid - 1;
+    }
+}
+```
