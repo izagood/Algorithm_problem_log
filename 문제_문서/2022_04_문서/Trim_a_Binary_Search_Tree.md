@@ -1,20 +1,17 @@
 ###   정답(Solution)
 ```java
-    소스코드
+class Solution {
+    public TreeNode trimBST(TreeNode root, int low, int high) {
+        if (root == null) return root;
+        if (root.val > high) return trimBST(root.left, low, high);
+        if (root.val < low) return trimBST(root.right, low, high);
+
+        root.left = trimBST(root.left, low, high);
+        root.right = trimBST(root.right, low, high);
+        return root;       
+    }
+}
 ```
 
 ###   분석
-
-
-###   참고할 만한 정답
-```java
-    소스코드
-```
-
-###   비교 분석
--   비교 분석한 내용
-
-###   비교 분석 반영
-```java
-    정답에 참고한 내용 추가
-```
+-   이진 탐색 트리에서 high와 low 사이 범위의 상대적 구조를 유지하며 범위 밖의 node를 제거
