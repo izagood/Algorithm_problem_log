@@ -1,6 +1,6 @@
 ###   정답(Solution)
 
--   이중 for문 (시간 초과)
+-   이중 for문 풀이 (시간 초과)
 
 ```java
 class Solution {
@@ -19,10 +19,25 @@ class Solution {
 }
 ```
 
--   
+-   DP 풀이
 
 ```java
+class Solution {
+    public int maxSubArray(int[] nums) {
 
+        int currentSubarray = nums[0];
+        int maxSubarray = nums[0];
+        
+        for (int i = 1; i < nums.length; i++) {
+            int num = nums[i];
+
+            currentSubarray = Math.max(num, currentSubarray + num);
+            maxSubarray = Math.max(maxSubarray, currentSubarray);
+        }
+        
+        return maxSubarray;
+    }
+}
 ```
 
 ###   분석
