@@ -53,12 +53,48 @@ class Solution {
 -   Array of Fixed Length
 
 ```java
-    소스코드
+class Solution {
+    public boolean isValidSudoku(char[][] board) {
+        int len = board.length;
+        
+        int[][] rows = new int[len][len];
+        int[][] cols = new int[len][len];
+        int[][] boxes = new int[len][len];
+        
+        for(int row=0; row<len; row++){
+            for(int col=0; col<len; col++){
+                
+                if(board[row][col] == '.'){
+                    continue;
+                }
+                
+                int position = board[row][col] - '1';
+                
+                if(rows[row][position] == 1){
+                    return false;
+                }
+                rows[row][position] = 1;
+                
+                if(cols[col][position] == 1){
+                    return false;
+                }
+                cols[col][position] = 1;
+                
+                int idx = (row / 3) * 3 + col / 3;
+                if(boxes[idx][position] == 1){
+                    return false;
+                }
+                boxes[idx][position] = 1;
+            }
+        }
+        return true;
+    }
+}
 ```
 -   Bitmasking
 
 ```java
-    소스코드
+
 ```
 
 ###   분석
